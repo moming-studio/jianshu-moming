@@ -394,6 +394,9 @@ body{
 .post-title:hover{
   color:#333;
 }
+.post-desc{
+  font-size:14px;
+}
 .post-meta{
   font-size:12px;
 }

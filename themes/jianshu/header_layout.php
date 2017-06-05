@@ -60,7 +60,7 @@ if(!function_exists('getReadMode')) include_once('functions.php');
 </div>
 <div id="wrapper" class="clearfix">
 <div id="cover" <?php if($this->is('single')): ?>style="display:none;"<?php endif; ?>>
-	<div class="cover-img" style="background-image:url('<?php if ($this->options->bgPhoto){$photo = explode(',',$this->options->bgPhoto);echo $photo[array_rand($photo,1)];}else{$this->options->themeUrl('img/bg.jpg');}?>')"></div>
+	<div class="cover-img" style="background-image:url('<?php if ($this->options->bgPhoto){$photo = explode(',',$this->options->bgPhoto);echo $photo[array_rand($photo,1)];}else{$this->options->themeUrl('img/background.jpg');}?>')"></div>
 	<div class="cover-info">
 	<?php if($this->options->avatarUrl):?>
 		<img class="avatar" width="72" src="<?php $this->options->avatarUrl();?>" alt="" />
@@ -68,17 +68,6 @@ if(!function_exists('getReadMode')) include_once('functions.php');
 	  <h3><?php $this->options->title(); ?></h3>
 	<?php endif;?>
       <p><?php $this->options->description(); ?></p>
-      <div class="cover-sns">
-		<div class="btn btn-weibo">
-			<a href="javascript:void(0);"><i class="fa fa-weibo"></i></a>
-			<div class="qrcode"><img src="<?php $this->options->themeUrl('img/site.png'); ?>" alt="" /></div>
-			<div class="qrcode-arrow"></div>
-		</div>
-		<div class="btn btn-weixin">
-			<a class="" href="javascript:void(0);"><i class="fa fa-weixin"></i></a>
-			<div class="qrcode"><img src="<?php $this->options->themeUrl('img/site.png'); ?>" alt="" /></div>
-			<div class="qrcode-arrow"></div>
-		</div>
 	  </div>
     </div>
 </div>
