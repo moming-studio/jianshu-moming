@@ -67,6 +67,7 @@ if(!function_exists('getReadMode')) include_once('functions.php');
 	<?php else:?>
 	  <h3><?php $this->options->title(); ?></h3>
 	<?php endif;?>
+	  <p>MoMing</p>
       <p><?php $this->options->description(); ?></p>
 	  </div>
     </div>
